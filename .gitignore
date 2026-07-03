@@ -1,0 +1,27 @@
+# Système
+.DS_Store
+Thumbs.db
+
+# Environnement local
+.env
+
+# Machines virtuelles éventuelles
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+
+# Logs
+*.log
+
+# Dossiers temporaires
+tmp/
+temp/
+
+# Fichiers personnels
+*.bak
+*.old
+
+# IDE
+.vscode/
+.idea/
