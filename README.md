@@ -46,3 +46,4 @@ Ce projet est principalement lié à l’épreuve E5 : support et mise à dispos
 | Semaine | Travail réalisé | Statut |
 |---|---|---|
 | Semaine 1 | Définition du périmètre, inventaire prévisionnel du parc et backlog initial | Terminé |
+| Semaine 2 | Cartographie du système d’information, inventaire du parc et règles de sécurisation de base | Terminé |

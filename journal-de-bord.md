@@ -55,3 +55,37 @@ Le projet GLPI EcoTech dispose maintenant d’une première base documentaire :
 Ce projet prépare principalement l’épreuve E5.
 
 Il permet de montrer une démarche de support informatique : gestion du parc, demandes, incidents, documentation et mise à disposition d’un service informatique.
+
+## Semaine 2 — Cartographie du système d’information
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était d’identifier les équipements et les services composant le système d’information d’EcoTech.
+
+Ce travail prépare le projet GLPI EcoTech, qui servira principalement pour l’épreuve E5.
+
+### Travail réalisé
+
+- Recensement du parc cible.
+- Création d’une cartographie simple du système d’information.
+- Mise à jour de l’inventaire prévisionnel.
+- Réflexion sur les règles de sécurisation de base.
+- Préparation des éléments à intégrer plus tard dans GLPI.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de rester réaliste et de ne pas imaginer une infrastructure trop complexe par rapport à une petite entreprise.
+
+### Résultat obtenu
+
+Le projet GLPI dispose maintenant d’une première cartographie du système d’information et d’un inventaire plus précis du parc informatique.
+
+Ces documents prépareront l’ajout futur des équipements dans GLPI.
+
+### Preuves produites
+
+- cartographie-si.md
+- inventaire-parc.md
+- regles-securisation-equipements.md
+- capture du schéma Mermaid sur GitHub
+- capture du commit Git
