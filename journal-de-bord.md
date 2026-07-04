@@ -89,3 +89,51 @@ Ces documents prépareront l’ajout futur des équipements dans GLPI.
 - regles-securisation-equipements.md
 - capture du schéma Mermaid sur GitHub
 - capture du commit Git
+
+## Semaine 3 — Préparation des tickets GLPI
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de préparer une liste de tickets réalistes à intégrer plus tard dans GLPI.
+
+Ces tickets sont basés sur le contexte de l’entreprise EcoTech et serviront de preuves pour l’épreuve E5.
+
+### Travail réalisé
+
+- Rédaction de 8 tickets réalistes.
+- Classification des tickets par type, catégorie et priorité.
+- Association des tickets avec des équipements ou services.
+- Identification des compétences E5 liées aux tickets.
+- Préparation des futures preuves à réaliser dans GLPI.
+
+### Tickets préparés
+
+- PC administratif lent.
+- Imprimante / scanner indisponible.
+- Demande d’accès à Google Drive.
+- Problème d’accès à l’application EcoTech.
+- Téléphone professionnel abîmé.
+- Devis introuvable.
+- Connexion Internet instable via Livebox.
+- Mise en place d’une sauvegarde régulière.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de créer des tickets réalistes, adaptés à une petite entreprise, sans inventer une infrastructure trop complexe.
+
+### Résultat obtenu
+
+Le projet GLPI EcoTech dispose maintenant d’une base de tickets qui pourra être saisie plus tard dans GLPI.
+
+Ces tickets permettront de produire des captures et de montrer une démarche professionnelle de support informatique.
+
+### Preuves produites
+
+- tickets-glpi-previsionnels.md
+- classification-tickets.md
+- capture des tickets dans VS Code
+- capture du commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine est liée à l’épreuve E5, car elle prépare la gestion des incidents, des demandes d’assistance et du patrimoine informatique.
