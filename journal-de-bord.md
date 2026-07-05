@@ -137,3 +137,47 @@ Ces tickets permettront de produire des captures et de montrer une démarche pro
 ### Lien avec le BTS SIO
 
 Cette semaine est liée à l’épreuve E5, car elle prépare la gestion des incidents, des demandes d’assistance et du patrimoine informatique.
+
+## Semaine 4 — Préparation de l’environnement GLPI
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de préparer l’environnement technique du projet GLPI EcoTech.
+
+Cette étape prépare l’installation future de GLPI sur une machine virtuelle Debian 11.
+
+### Travail réalisé
+
+- Création du fichier `installation-glpi.md`.
+- Création du fichier `environnement-debian.md`.
+- Création du fichier `prerequis-glpi.md`.
+- Création du fichier `procedure-acces-vm.md`.
+- Préparation du dossier de preuves de la semaine 4.
+- Mise à jour de la documentation du projet.
+- Préparation des captures à réaliser sur la VM Debian.
+
+### Difficultés rencontrées
+
+J’ai compris qu’il ne fallait pas installer GLPI directement sans préparer l’environnement.
+
+Il est important de vérifier d’abord la VM Debian, les prérequis, l’accès réseau et la procédure d’installation.
+
+### Résultat obtenu
+
+Le projet dispose maintenant d’une base documentaire pour préparer l’installation de GLPI.
+
+La VM Debian, les prérequis et la procédure d’accès sont documentés afin de faciliter la suite du projet.
+
+### Preuves produites
+
+- `installation-glpi.md`
+- `environnement-debian.md`
+- `prerequis-glpi.md`
+- `procedure-acces-vm.md`
+- capture de l’arborescence VS Code
+- capture GitHub
+- commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine est liée à l’épreuve E5 car elle prépare la mise à disposition d’un service informatique, ici GLPI, dans un environnement Debian.

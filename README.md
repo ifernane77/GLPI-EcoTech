@@ -48,3 +48,4 @@ Ce projet est principalement lié à l’épreuve E5 : support et mise à dispos
 | Semaine 1 | Définition du périmètre, inventaire prévisionnel du parc et backlog initial | Terminé |
 | Semaine 2 | Cartographie du système d’information, inventaire du parc et règles de sécurisation de base | Terminé |
 | Semaine 3 | Préparation de 8 tickets GLPI réalistes et classification par type, priorité et compétence E5 | Terminé |
+| Semaine 4 | Préparation de l’environnement GLPI, VM Debian 11, prérequis et procédure d’accès | Terminé |
