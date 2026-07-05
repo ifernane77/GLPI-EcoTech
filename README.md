@@ -49,3 +49,4 @@ Ce projet est principalement lié à l’épreuve E5 : support et mise à dispos
 | Semaine 2 | Cartographie du système d’information, inventaire du parc et règles de sécurisation de base | Terminé |
 | Semaine 3 | Préparation de 8 tickets GLPI réalistes et classification par type, priorité et compétence E5 | Terminé |
 | Semaine 4 | Préparation de l’environnement GLPI, VM Debian 11, prérequis et procédure d’accès | Terminé |
+| Semaine 5 | Préparation des catégories GLPI : matériel, impression, réseau, cloud/Google Drive, application EcoTech, documents, sauvegarde et accès utilisateur | Terminé |

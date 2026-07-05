@@ -181,3 +181,46 @@ La VM Debian, les prérequis et la procédure d’accès sont documentés afin d
 ### Lien avec le BTS SIO
 
 Cette semaine est liée à l’épreuve E5 car elle prépare la mise à disposition d’un service informatique, ici GLPI, dans un environnement Debian.
+
+## Semaine 5 — Préparation des catégories GLPI
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de préparer les catégories qui seront utilisées dans GLPI EcoTech.
+
+Cette étape permet d’organiser les futurs tickets, incidents et demandes avant le paramétrage réel dans GLPI.
+
+### Travail réalisé
+
+- Création du fichier `categories-glpi.md`.
+- Préparation des catégories : matériel, impression, réseau, cloud/Google Drive, application EcoTech, documents, sauvegarde et accès utilisateur.
+- Création du fichier `correspondance-tickets-categories.md`.
+- Association des 8 tickets prévisionnels aux catégories GLPI.
+- Création du fichier `plan-parametrage-glpi.md`.
+- Préparation des étapes à réaliser plus tard dans GLPI.
+- Mise à jour de la documentation du projet.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de garder une organisation simple.
+
+Il aurait été possible de créer beaucoup de catégories, mais j’ai choisi de rester sur des catégories réalistes et adaptées à une petite entreprise comme EcoTech.
+
+### Résultat obtenu
+
+Le projet dispose maintenant d’une structure de catégories GLPI cohérente.
+
+Cette préparation facilitera la création des catégories, des équipements et des tickets lorsque GLPI sera installé.
+
+### Preuves produites
+
+- `categories-glpi.md`
+- `correspondance-tickets-categories.md`
+- `plan-parametrage-glpi.md`
+- capture VS Code
+- capture GitHub
+- commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine est liée à l’épreuve E5, car elle prépare l’organisation d’un outil de support informatique, la gestion des incidents, des demandes et du patrimoine informatique.
