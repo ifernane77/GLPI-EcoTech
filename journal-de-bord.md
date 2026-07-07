@@ -224,3 +224,48 @@ Cette préparation facilitera la création des catégories, des équipements et 
 ### Lien avec le BTS SIO
 
 Cette semaine est liée à l’épreuve E5, car elle prépare l’organisation d’un outil de support informatique, la gestion des incidents, des demandes et du patrimoine informatique.
+
+## Semaine 6 — Schéma du SI EcoTech et flux de support
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de représenter simplement le système informatique d’EcoTech et les flux de support prévus dans GLPI.
+
+Cette étape permet de comprendre l’environnement avant la saisie des équipements et tickets dans GLPI.
+
+### Travail réalisé
+
+- Création du fichier `schema-si-ecotech.md`.
+- Réalisation d’un schéma simple du SI EcoTech.
+- Représentation de la Livebox, des postes, des téléphones, de l’imprimante et du serveur GLPI de test.
+- Création du fichier `flux-support-glpi.md`.
+- Description des flux de support : incident, demande d’accès, problème matériel, problème réseau et demande documentaire.
+- Création du fichier `justification-schema-si.md`.
+- Justification des choix réalisés pour le schéma.
+- Mise à jour de la documentation du projet.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de garder un schéma simple et réaliste.
+
+J’ai évité de représenter une architecture trop complexe afin de rester cohérent avec le contexte d’une petite entreprise.
+
+### Résultat obtenu
+
+Le projet dispose maintenant d’un schéma clair du système informatique EcoTech.
+
+Cette documentation facilitera la future utilisation de GLPI pour gérer le parc informatique, les tickets et les demandes.
+
+### Preuves produites
+
+- `schema-si-ecotech.md`
+- `flux-support-glpi.md`
+- `justification-schema-si.md`
+- capture du schéma Mermaid sur GitHub
+- capture VS Code
+- capture GitHub
+- commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine est liée à l’épreuve E5, car elle prépare la gestion du patrimoine informatique et le traitement des incidents et demandes dans GLPI.
