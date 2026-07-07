@@ -269,3 +269,50 @@ Cette documentation facilitera la future utilisation de GLPI pour gérer le parc
 ### Lien avec le BTS SIO
 
 Cette semaine est liée à l’épreuve E5, car elle prépare la gestion du patrimoine informatique et le traitement des incidents et demandes dans GLPI.
+
+## Semaine 7 — Préparation des entités, groupes et profils GLPI
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de préparer les entités, groupes, utilisateurs et profils prévus pour GLPI EcoTech.
+
+Cette étape fait le lien avec les leçons sur les utilisateurs, les groupes et les accès.
+
+### Travail réalisé
+
+- Création du fichier `entites-glpi-prevues.md`.
+- Préparation de l’entité principale EcoTech.
+- Création du fichier `groupes-utilisateurs-glpi.md`.
+- Préparation des groupes : gérants, employés, prestataires, support informatique et administration GLPI.
+- Création du fichier `comptes-utilisateurs-prevus.md`.
+- Préparation des comptes fictifs à créer plus tard dans GLPI.
+- Création du fichier `profils-et-droits-glpi.md`.
+- Préparation des profils : demandeur, observateur, technicien et super-admin.
+- Création du fichier `preparation-parametrage-utilisateurs.md`.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de ne pas donner trop de droits à tous les utilisateurs.
+
+J’ai donc choisi une organisation simple, avec des groupes et profils adaptés à une petite entreprise.
+
+### Résultat obtenu
+
+Le projet dispose maintenant d’une organisation claire pour les futurs utilisateurs GLPI.
+
+Cette préparation servira lorsque GLPI sera installé et que les comptes pourront être créés réellement.
+
+### Preuves produites
+
+- `entites-glpi-prevues.md`
+- `groupes-utilisateurs-glpi.md`
+- `comptes-utilisateurs-prevus.md`
+- `profils-et-droits-glpi.md`
+- `preparation-parametrage-utilisateurs.md`
+- capture VS Code
+- capture GitHub
+- commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine est liée à l’épreuve E5, car elle prépare l’organisation des utilisateurs, groupes, profils et droits dans un outil de support informatique.

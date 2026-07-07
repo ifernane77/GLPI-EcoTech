@@ -51,3 +51,4 @@ Ce projet est principalement lié à l’épreuve E5 : support et mise à dispos
 | Semaine 4 | Préparation de l’environnement GLPI, VM Debian 11, prérequis et procédure d’accès | Terminé |
 | Semaine 5 | Préparation des catégories GLPI : matériel, impression, réseau, cloud/Google Drive, application EcoTech, documents, sauvegarde et accès utilisateur | Terminé |
 | Semaine 6 | Schéma simple du SI EcoTech : Livebox, postes, téléphones, imprimante, serveur GLPI de test, utilisateurs et flux de support | Terminé |
+| Semaine 7 | Préparation des entités, groupes, comptes utilisateurs et profils GLPI pour EcoTech | Terminé |
