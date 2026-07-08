@@ -316,3 +316,51 @@ Cette préparation servira lorsque GLPI sera installé et que les comptes pourro
 ### Lien avec le BTS SIO
 
 Cette semaine est liée à l’épreuve E5, car elle prépare l’organisation des utilisateurs, groupes, profils et droits dans un outil de support informatique.
+
+## Semaine 8 — Préparation de la page portfolio GLPI EcoTech
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de préparer une première page portfolio pour le projet GLPI EcoTech.
+
+Cette semaine est liée au portfolio, à l’identité professionnelle et à la préparation de l’oral.
+
+### Travail réalisé
+
+- Création du dossier `portfolio`.
+- Création du fichier `presentation-portfolio-glpi.md`.
+- Création du fichier `preuves-portfolio.md`.
+- Création du fichier `lien-e5-glpi.md`.
+- Création du fichier `script-oral-glpi.md`.
+- Présentation du contexte EcoTech.
+- Présentation de l’objectif E5 du projet.
+- Liste des preuves déjà produites.
+- Préparation d’un court script oral.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de ne pas présenter GLPI comme déjà totalement opérationnel.
+
+J’ai donc expliqué clairement que certaines parties sont préparées dans la documentation et seront réalisées dans GLPI lorsque l’installation sera terminée.
+
+### Résultat obtenu
+
+Le projet dispose maintenant d’une première base pour le portfolio.
+
+Cette page pourra être reprise plus tard avec les captures réelles de GLPI installé, les tickets, les équipements et les articles de base de connaissances.
+
+### Preuves produites
+
+- `portfolio/presentation-portfolio-glpi.md`
+- `portfolio/preuves-portfolio.md`
+- `portfolio/lien-e5-glpi.md`
+- `portfolio/script-oral-glpi.md`
+- capture VS Code
+- capture GitHub
+- commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine prépare le portfolio et l’oral.
+
+Elle permet aussi de relier le projet GLPI EcoTech aux compétences de l’épreuve E5.
