@@ -65,15 +65,3 @@ J’ai travaillé sur :
 - les groupes et profils utilisateurs.
 
 Je n’ai pas encore présenté GLPI comme totalement opérationnel si l’installation n’est pas terminée.
-
----
-
-## Phrase simple pour le jury
-
-J’ai préparé le projet GLPI EcoTech pour montrer comment une petite entreprise peut organiser son support informatique avec un inventaire, des utilisateurs, des tickets et une base de connaissances.
-
----
-
-## Version très courte
-
-GLPI EcoTech est mon projet principal pour l’épreuve E5. Il sert à préparer la gestion du parc informatique, des incidents et des demandes internes d’EcoTech.
