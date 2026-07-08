@@ -364,3 +364,50 @@ Cette page pourra être reprise plus tard avec les captures réelles de GLPI ins
 Cette semaine prépare le portfolio et l’oral.
 
 Elle permet aussi de relier le projet GLPI EcoTech aux compétences de l’épreuve E5.
+
+## Semaine 9 — Procédure de support GLPI EcoTech
+
+### Objectif de la semaine
+
+L’objectif de cette semaine était de préparer la procédure de support pour GLPI EcoTech.
+
+Cette procédure explique comment un ticket doit être déclaré, qualifié, affecté, traité, documenté puis clôturé.
+
+### Travail réalisé
+
+- Création du dossier `procedures-support`.
+- Création du fichier `procedure-traitement-ticket.md`.
+- Préparation des étapes de traitement d’un ticket.
+- Création du fichier `cycle-vie-ticket.md`.
+- Préparation du cycle de vie d’un ticket.
+- Création du fichier `modeles-tickets-support.md`.
+- Préparation de modèles de tickets adaptés au contexte EcoTech.
+
+### Difficultés rencontrées
+
+La difficulté principale a été de rester cohérent avec l’état actuel du projet.
+
+Je n’ai pas présenté les tickets comme déjà traités dans GLPI si l’outil n’est pas encore totalement prêt.
+
+J’ai donc préparé une procédure qui sera utilisée plus tard dans GLPI.
+
+### Résultat obtenu
+
+Le projet dispose maintenant d’une procédure simple de traitement des tickets.
+
+Cette documentation servira pour créer et traiter les tickets dans GLPI plus tard.
+
+### Preuves produites
+
+- `procedures-support/procedure-traitement-ticket.md`
+- `procedures-support/cycle-vie-ticket.md`
+- `procedures-support/modeles-tickets-support.md`
+- capture du fichier principal
+- capture GitHub ou README
+- commit Git
+
+### Lien avec le BTS SIO
+
+Cette semaine est directement liée à l’épreuve E5.
+
+Elle prépare le traitement des incidents et demandes d’assistance dans un outil de support informatique.

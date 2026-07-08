@@ -53,3 +53,4 @@ Ce projet est principalement lié à l’épreuve E5 : support et mise à dispos
 | Semaine 6 | Schéma simple du SI EcoTech : Livebox, postes, téléphones, imprimante, serveur GLPI de test, utilisateurs et flux de support | Terminé |
 | Semaine 7 | Préparation des entités, groupes, comptes utilisateurs et profils GLPI pour EcoTech | Terminé |
 | Semaine 8 | Préparation de la page portfolio GLPI EcoTech : contexte, objectif E5, preuves, captures clés et script oral | Terminé |
+| Semaine 9 | Préparation de la procédure support GLPI : déclaration, qualification, affectation, traitement, documentation et clôture d’un ticket | Terminé |
