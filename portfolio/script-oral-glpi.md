@@ -1,4 +1,3 @@
-```md id="8wac5i"
 # Script oral — GLPI EcoTech
 
 ## Objectif
