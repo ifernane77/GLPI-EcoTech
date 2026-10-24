@@ -23,3 +23,9 @@ Les captures prouvent les données saisies et les états affichés. Les interven
 Aucun Active Directory, VLAN, serveur physique de production, supervision avancée ou déploiement de GLPI dans l’entreprise n’est revendiqué. Les droits de tous les comptes, la sauvegarde/restauration et l’exécution technique des demandes externes restent à étayer.
 
 Voir l’[index des preuves](preuves/README.md) et le [compte rendu des compléments](compte-rendu-coherence.md).
+
+## Chronologie par rapport au stage
+
+Selon la précision apportée par l’auteur le 24 octobre 2026, le stage a commencé le **18 août 2026**. Le travail GLPI présenté dans ce dépôt a été réalisé **avant le stage**, alors que l’auteur partageait déjà les bureaux de l’entreprise. Les commits antérieurs au 18 août sont cohérents avec cette chronologie et leurs dates sont conservées.
+
+Ce travail antérieur est présenté comme tel. Il ne doit pas être comptabilisé comme une activité effectuée pendant le stage. Toute activité ultérieure réellement réalisée pendant le stage doit être décrite séparément avec ses dates et preuves ; aucune n’est déduite automatiquement des fichiers existants.
