@@ -1,41 +1,23 @@
-# Procédure d’accès à la VM Debian — GLPI EcoTech
+# Accéder au laboratoire GLPI
 
-## Objectif
+## Informations connues
 
-Ce document explique comment accéder à la machine virtuelle Debian prévue pour le projet GLPI EcoTech.
+- Virtualisation documentée : VirtualBox.
+- Deux VM : serveur GLPI sous Debian 11 et client `Debian-Client-GLPI-Agent`.
+- Adresse serveur au moment des essais agent : `192.168.1.34`.
+- GLPI : `http://localhost/glpi` depuis le serveur, ou `http://<IP_SERVEUR>/glpi` depuis une machine autorisée du réseau.
+- Interface locale agent : `http://localhost:62354` depuis le client.
 
-## Étapes d’accès prévues
+Le nom exact de la VM serveur et le compte Linux utilisé ne sont pas confirmés par cette documentation. Les vérifier dans le laboratoire ; aucun mot de passe ne doit être ajouté au dépôt.
 
-1. Ouvrir le logiciel de virtualisation.
-2. Sélectionner la machine virtuelle Debian 11.
-3. Démarrer la machine virtuelle.
-4. Se connecter avec l’utilisateur prévu.
-5. Ouvrir un terminal.
-6. Vérifier que la VM fonctionne correctement.
-7. Vérifier l’accès au réseau.
+## Procédure de vérification
 
-## Informations à compléter
+1. Ouvrir VirtualBox et identifier les deux VM.
+2. Vérifier leur configuration réseau, puis les démarrer.
+3. Se connecter avec les comptes conservés hors du dépôt.
+4. Relever le nom et l’adresse du serveur avec `hostnamectl` et `ip -br address`.
+5. Vérifier Apache et MariaDB, puis ouvrir GLPI dans le navigateur.
+6. Se connecter avec le compte adapté au test ; vérifier l’entité sélectionnée.
+7. Sur le client, vérifier l’adresse cible de l’agent et la communication réseau avant l’envoi d’inventaire.
 
-| Élément | Valeur |
-|---|---|
-| Nom de la VM | Debian-GLPI-EcoTech |
-| Système | Debian 11 |
-| Utilisateur | À compléter |
-| Mot de passe | Non stocké dans GitHub |
-| Adresse IP | À compléter après vérification |
-| Logiciel utilisé | VirtualBox ou VMware |
-
-## Règle importante
-
-Le mot de passe de la VM ne doit pas être écrit dans le dépôt GitHub.
-
-Si une information sensible est nécessaire, elle doit rester hors du dépôt.
-
-## Commandes de vérification
-
-Commandes simples à utiliser dans Debian :
-
-```bash
-whoami
-hostnamectl
-ip a
+Conserver la date du test et une capture d’accès réussie. L’ancienne adresse n’est pas une réservation IP démontrée. Voir [environnement](environnement-debian.md).

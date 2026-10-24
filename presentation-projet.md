@@ -1,58 +1,31 @@
-﻿# Présentation du projet — GLPI EcoTech
+# Présentation — GLPI EcoTech
 
-## Contexte
+## Contexte et périmètre
 
-GLPI EcoTech est une simulation professionnelle réalisée dans le cadre du BTS SIO option SLAM.
+Le projet simule le support informatique d’EcoTech, petite entreprise du BTP à Saint-Pierre, La Réunion. Il illustre la gestion du patrimoine, des incidents et demandes et la documentation d’un service informatique pour E5.
 
-L’objectif est de représenter la mise en place d’un outil de gestion du support informatique pour EcoTech, une petite entreprise située à Saint-Pierre, à La Réunion.
+L’environnement technique comporte une VM serveur Debian 11 avec Apache, PHP, MariaDB et GLPI et une VM cliente Debian avec GLPI Agent. L’organisation EcoTech, ses utilisateurs, équipements et tickets sont représentés dans GLPI avec des données de simulation.
 
-Ce projet sert principalement à illustrer des compétences liées à l’épreuve E5.
+## Travail attesté
 
-## Objectif du projet
+- Installation serveur documentée et captures d’accès à GLPI.
+- Configuration réseau des VM et remontée du client Debian par GLPI Agent.
+- Création d’une entité EcoTech, de cinq comptes EcoTech et de quatre groupes.
+- Habilitation Technician du compte support dans EcoTech.
+- Neuf équipements simulés enregistrés et un PC administratif détaillé.
+- Huit tickets visibles ; interventions et solutions détaillées pour les incidents imprimante et Internet, premières vérifications pour le Wi-Fi du téléphone.
+- Procédure de déclaration d’un ticket et trace d’un article Google Drive.
 
-Le projet consiste à préparer et documenter un environnement GLPI permettant de gérer :
+## Limites de présentation
 
-- le parc informatique ;
-- les utilisateurs ;
-- les incidents ;
-- les demandes d’assistance ;
-- une base de connaissances simple.
+Les captures prouvent les données saisies et les états affichés. Les interventions déclarées dans les tickets restent celles d’une simulation ; elles ne certifient pas une intervention sur les équipements physiques de l’entreprise. Le client Debian inventorié est visible séparément dans l’entité racine, sans rattachement EcoTech démontré.
 
-## Périmètre
+Aucun Active Directory, VLAN, serveur physique de production, supervision avancée ou déploiement de GLPI dans l’entreprise n’est revendiqué. Les droits de tous les comptes, la sauvegarde/restauration et l’exécution technique des demandes externes restent à étayer.
 
-Le projet couvre :
+Voir l’[index des preuves](preuves/README.md) et le [compte rendu des compléments](compte-rendu-coherence.md).
 
-- la préparation d’une machine Debian 11 ;
-- l’installation de GLPI ;
-- la création de l’entité EcoTech ;
-- la création des utilisateurs et groupes ;
-- l’inventaire du parc informatique ;
-- la création de tickets réalistes ;
-- la rédaction de procédures simples ;
-- la conservation de preuves pour le portfolio.
+## Chronologie par rapport au stage
 
-## Prérequis techniques
+Selon la précision apportée par l’auteur le 24 octobre 2026, le stage a commencé le **18 août 2026**. Le travail GLPI présenté dans ce dépôt a été réalisé **avant le stage**, alors que l’auteur partageait déjà les bureaux de l’entreprise. Les commits antérieurs au 18 août sont cohérents avec cette chronologie et leurs dates sont conservées.
 
-Pour réaliser le projet, il faut :
-
-- une machine virtuelle Debian 11 ;
-- un accès Internet ;
-- Apache ;
-- PHP ;
-- MariaDB ou MySQL ;
-- un navigateur web ;
-- GitHub pour stocker la documentation.
-
-## Limites du projet
-
-Le projet reste volontairement simple.
-
-Il ne prévoit pas :
-
-- d’Active Directory complet ;
-- de supervision avancée ;
-- de VLAN ;
-- de serveur physique en production ;
-- d’automatisation complexe.
-
-L’objectif est d’avoir une simulation réaliste, compréhensible et défendable à l’oral du BTS.
+Ce travail antérieur est présenté comme tel. Il ne doit pas être comptabilisé comme une activité effectuée pendant le stage. Toute activité ultérieure réellement réalisée pendant le stage doit être décrite séparément avec ses dates et preuves ; aucune n’est déduite automatiquement des fichiers existants.

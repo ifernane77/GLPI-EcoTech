@@ -1,5 +1,8 @@
 # Installation de GLPI sur Debian 11
 
+> État documentaire au 24 octobre 2026 : procédure de laboratoire et captures historiques conservées. Le projet EcoTech est une simulation. Ces traces ne certifient ni la disponibilité actuelle du service, ni un déploiement en production. Les commandes décrivent le travail documenté ; elles ne constituent pas un script de réinstallation validé.
+> La procédure mentionne GLPI 10.0.25 ; la version installée reste à confirmer dans l’interface. La provenance et les commandes d’ajout du dépôt PHP 8.1 ne sont pas conservées. La modification des mots de passe par défaut n’est pas démontrée ; le tableau de bord initial affiche une alerte. Le mot de passe SQL publié auparavant a été neutralisé dans cette version, mais reste dans l’historique Git : s’il a été utilisé, le changer dans MariaDB et dans la configuration GLPI.
+
 ## 1. Présentation du projet
 
 Ce mini-projet consiste à installer **GLPI** sur une machine virtuelle Debian 11.
@@ -45,7 +48,7 @@ Machine utilisée :
 Preuve :
 
 ```text
-Capture : captures/01_vm_debian.png
+Capture : ../preuves/installation-serveur/01_vm_debian.png
 ```
 
 ---
@@ -71,7 +74,7 @@ systemctl status apache2
 Preuve :
 
 ```text
-Capture : captures/02_apache_php.png
+Capture : ../preuves/installation-serveur/02_apache_php.png
 ```
 
 ---
@@ -102,7 +105,7 @@ ls /etc/apache2/mods-enabled/php*.load
 Preuve :
 
 ```text
-Capture : captures/03_php81_apache.png
+Capture : ../preuves/installation-serveur/03_php81_apache.png
 ```
 
 ---
@@ -156,7 +159,7 @@ systemctl status mariadb
 Preuve :
 
 ```text
-Capture : captures/04_mariadb.png
+Capture : ../preuves/installation-serveur/04_mariadb.png
 ```
 
 ---
@@ -182,7 +185,7 @@ php -m | grep -E "curl|gd|intl|mbstring|mysqli|xml|zip|ldap|apcu|bcmath"
 Preuve :
 
 ```text
-Capture : captures/05_extensions_php.png
+Capture : ../preuves/installation-serveur/05_extensions_php.png
 ```
 
 ---
@@ -228,7 +231,7 @@ ls -ld /var/www/html/glpi
 Preuve :
 
 ```text
-Capture : captures/06_dossier_glpi.png
+Capture : ../preuves/installation-serveur/06_dossier_glpi.png
 ```
 
 ---
@@ -245,7 +248,7 @@ Commandes SQL utilisées :
 
 ```sql
 CREATE DATABASE glpi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY 'Glpi2026!';
+CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY '<MOT_DE_PASSE_SQL_A_DEFINIR>';
 GRANT ALL PRIVILEGES ON glpi.* TO 'glpiuser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
@@ -266,7 +269,7 @@ mariadb -u root -e "SHOW DATABASES;"
 Preuve :
 
 ```text
-Capture : captures/07_base_glpi.png
+Capture : ../preuves/installation-serveur/07_base_glpi.png
 ```
 
 ---
@@ -284,7 +287,7 @@ Informations de connexion à la base :
 ```text
 Serveur SQL : localhost
 Utilisateur SQL : glpiuser
-Mot de passe : Glpi2026!
+Mot de passe : <MOT_DE_PASSE_SQL_A_DEFINIR>
 Base de données : glpi
 ```
 
@@ -295,7 +298,7 @@ L’installation graphique permet de connecter GLPI à la base de données Maria
 Preuve :
 
 ```text
-Capture : captures/08_installation_navigateur.png
+Capture de cette étape non conservée dans le dépôt. La connexion et le tableau de bord sont conservés aux étapes suivantes.
 ```
 
 ---
@@ -314,8 +317,8 @@ Après la première connexion, il est recommandé de modifier les mots de passe 
 Preuves :
 
 ```text
-Capture : captures/09_connexion_glpi.png
-Capture : captures/10_tableau_de_bord_glpi.png
+Capture : ../preuves/installation-serveur/09_connexion_glpi.png
+Capture : ../preuves/installation-serveur/10_tableau_de_bord_glpi.png
 ```
 
 ---
@@ -341,7 +344,7 @@ ls /var/www/html/glpi
 Preuve :
 
 ```text
-Capture : captures/11_suppression_install.png
+Capture : ../preuves/installation-serveur/11_suppresion_install.png
 ```
 
 ---

@@ -1,146 +1,25 @@
-# Flux de support — GLPI EcoTech
+# Flux de support constaté et procédure cible
 
-## Objectif
+## Chaîne de traitement
 
-Ce document décrit les flux de support prévus pour GLPI EcoTech.
+Déclaration → qualification → affectation → vérifications → solution → résolution → clôture.
 
-L’objectif est d’expliquer comment une demande ou un incident peut être signalé, suivi et résolu avec GLPI.
+Cette chaîne décrit la procédure de travail. Chaque ticket n’est présenté qu’au stade visible dans ses preuves.
 
----
+## Cas conservés
 
-## Principe général
+| Cas | Équipement ou service | État démontré |
+|---|---|---|
+| Impression, ticket 4 | ECO-IMP-ADM-01 | Prise en charge, solution saisie et clôture |
+| Internet, ticket 8 | ECO-NET-LIVEBOX-01 | Prise en charge, solution saisie et clôture |
+| Wi-Fi, ticket 10 | ECO-TEL-TER-01 | Affectation et premières vérifications |
+| Accès Drive, ticket 6 | Dossier Google Drive chantier | Existence et statut Clos ; détail à conserver |
+| Procédure GLPI, ticket 11 | Base de connaissances | Statut Résolu et procédure visible séparément |
 
-Avant GLPI, les informations sont dispersées entre :
+L’accès Google Drive n’est pas une intégration technique entre GLPI et Google Drive. Les actions externes doivent être démontrées séparément si elles sont revendiquées.
 
-- WhatsApp ;
-- emails ;
-- échanges oraux ;
-- Google Drive ;
-- PC personnels.
+## Schéma historique
 
-Avec GLPI, les incidents et demandes pourront être centralisés sous forme de tickets.
+Les captures du schéma et du flux initial sont conservées dans [preuves/documentation](preuves/documentation/README.md). Elles expliquent le cadrage, sans constituer une preuve d’exécution de tous les flux envisagés.
 
----
-
-## 1. Flux — Déclaration d’un incident
-
-### Exemple
-
-L’imprimante ne fonctionne plus.
-
-### Étapes prévues
-
-1. L’utilisateur constate le problème.
-2. Il crée un ticket dans GLPI ou demande au support de le saisir.
-3. Le ticket est classé dans la catégorie adaptée.
-4. Le ticket est associé à l’équipement concerné.
-5. Le technicien analyse le problème.
-6. Une solution est proposée.
-7. Le ticket est résolu.
-8. Le ticket est clôturé.
-
-### Résultat attendu
-
-L’incident est tracé et peut être retrouvé plus tard.
-
----
-
-## 2. Flux — Demande d’accès
-
-### Exemple
-
-Un employé demande l’accès à un dossier Google Drive.
-
-### Étapes prévues
-
-1. L’utilisateur formule une demande.
-2. Le ticket est créé dans GLPI.
-3. Le ticket est classé dans la catégorie `Cloud / Google Drive`.
-4. Le responsable vérifie si l’accès est justifié.
-5. L’accès est accordé ou refusé.
-6. La réponse est ajoutée dans le ticket.
-7. Le ticket est clôturé.
-
-### Résultat attendu
-
-La demande est suivie et documentée.
-
----
-
-## 3. Flux — Incident matériel
-
-### Exemple
-
-Un téléphone professionnel est abîmé.
-
-### Étapes prévues
-
-1. L’utilisateur signale le problème.
-2. Le ticket est créé dans GLPI.
-3. Le ticket est associé au téléphone concerné.
-4. Le matériel est vérifié.
-5. Une décision est prise : réparation, remplacement ou mise hors service.
-6. Le statut du ticket est mis à jour.
-7. Le ticket est clôturé.
-
-### Résultat attendu
-
-Le problème matériel est lié à l’équipement dans GLPI.
-
----
-
-## 4. Flux — Problème réseau
-
-### Exemple
-
-La connexion Internet est instable.
-
-### Étapes prévues
-
-1. L’utilisateur signale le problème.
-2. Le ticket est créé dans GLPI.
-3. Le ticket est classé dans la catégorie `Réseau`.
-4. L’équipement `BOX-01` est associé au ticket.
-5. Les premières vérifications sont réalisées.
-6. Une solution est documentée.
-7. Le ticket est clôturé.
-
-### Résultat attendu
-
-Le problème réseau est suivi et peut être analysé si le problème revient.
-
----
-
-## 5. Flux — Demande documentaire
-
-### Exemple
-
-Un devis est introuvable.
-
-### Étapes prévues
-
-1. L’utilisateur crée une demande.
-2. Le ticket est classé dans la catégorie `Documents`.
-3. La recherche est effectuée dans les emplacements connus.
-4. Une réponse est apportée à l’utilisateur.
-5. Si nécessaire, une procédure de classement est ajoutée.
-6. Le ticket est clôturé.
-
-### Résultat attendu
-
-La demande est tracée et permet d’améliorer l’organisation documentaire.
-
----
-
-## Schéma simple du flux de ticket
-
-```mermaid
-flowchart TD
-    A[Utilisateur EcoTech] --> B[Création du ticket GLPI]
-    B --> C[Catégorie du ticket]
-    C --> D[Association à un équipement ou service]
-    D --> E[Analyse du problème]
-    E --> F[Réponse ou intervention]
-    F --> G[Résolution]
-    G --> H[Clôture du ticket]
-    H --> I[Historique conservé dans GLPI]
+[Procédure détaillée](gestion-du-support.md) — [registre des tickets](gestion-des-tickets.md).

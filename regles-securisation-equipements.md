@@ -1,38 +1,22 @@
-# Règles de base pour la sécurisation des équipements numériques
+# Sécurisation — éléments démontrés et contrôles à effectuer
 
-## Objectif
+## Éléments disponibles
 
-Ce document présente des règles simples de sécurisation applicables au contexte EcoTech.
+- Compte support avec une habilitation Technician dans EcoTech.
+- Procédure serveur décrivant la suppression du dossier d’installation ; capture conservée sous son nom historique `11_suppresion_install.png`.
+- Fiches du parc et tickets pour tracer les incidents de la simulation.
 
-Il s’agit d’une première réflexion liée aux équipements numériques de l’entreprise.
+Ces éléments ne démontrent pas une politique de sécurité déployée dans l’entreprise.
 
-## Règles proposées
+## Contrôles restant à étayer
 
-| N° | Règle | Application possible chez EcoTech |
-|---:|---|---|
-| 1 | Utiliser des mots de passe individuels | Chaque utilisateur doit avoir son propre compte |
-| 2 | Éviter les mots de passe partagés | Réduire les accès non traçables |
-| 3 | Mettre à jour les postes | Maintenir Windows, macOS et les logiciels à jour |
-| 4 | Vérifier l’antivirus | Identifier la protection utilisée sur les postes |
-| 5 | Sauvegarder les documents importants | Prévoir une sauvegarde régulière des fichiers |
-| 6 | Limiter les droits utilisateurs | Ne pas donner les droits administrateur à tout le monde |
-| 7 | Verrouiller les sessions | Éviter l’accès aux données en cas d’absence |
-| 8 | Classer les documents | Réduire les erreurs et pertes de temps |
-| 9 | Séparer les usages personnels et professionnels | Éviter la dispersion des données |
-| 10 | Documenter les procédures | Créer une base de connaissances simple |
+| Contrôle | État de preuve | Comment le documenter |
+|---|---|---|
+| Comptes GLPI par défaut | Le tableau de bord initial affiche une alerte | Vérifier les comptes, changer les mots de passe conservés et capturer l’état sans exposer les secrets |
+| Secret SQL ancien | Valeur neutralisée dans la documentation actuelle, encore présente dans l’historique | Si utilisée, changer le secret dans MariaDB et la configuration GLPI ; tester l’accès |
+| Moindre privilège | Habilitation support visible ; autres profils non démontrés | Capturer les habilitations et tester les limites d’un demandeur |
+| Accès HTTP | HTTP visible dans le laboratoire | Décrire le périmètre de test ; ne pas revendiquer HTTPS |
+| Sauvegarde et restauration | Non démontrées | Conserver procédure, résultat de sauvegarde et test de restauration isolé |
+| Mises à jour et antivirus des postes | Non démontrés | Relevés et résultats réels seulement si ces actions sont effectuées |
 
-## Lien avec GLPI
-
-GLPI pourra aider à appliquer certaines règles :
-
-- suivi du parc informatique ;
-- suivi des incidents ;
-- création de procédures ;
-- historique des demandes ;
-- identification des équipements concernés.
-
-## Limites
-
-Ces règles restent simples et adaptées à une petite structure.
-
-L’objectif n’est pas de mettre en place une politique de cybersécurité avancée, mais de montrer une première démarche professionnelle réaliste pour le BTS SIO.
+Ne conserver aucun mot de passe dans les captures ou exports publics. Les versions historiques Debian/PHP sont décrites comme environnement du projet ; aucune actualisation de l’environnement n’a été effectuée lors de la révision documentaire.

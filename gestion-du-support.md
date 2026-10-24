@@ -1,59 +1,24 @@
-# Gestion du support — GLPI EcoTech
+# Procédure de support — GLPI EcoTech
 
 ## Objectif
 
-Ce document présente la manière dont les tickets sont pris en charge dans GLPI.
+Tracer une demande ou un incident de sa déclaration à sa résolution, dans le périmètre de la simulation EcoTech. Les tickets 4 et 8 montrent une prise en charge, une solution et une clôture ; le ticket 10 montre une prise en charge encore en cours.
 
-## Cycle de vie d’un ticket
+## Procédure à appliquer
 
-1. L’utilisateur crée un ticket.
-2. Le support analyse la demande.
-3. Le ticket est classé dans une catégorie.
-4. Le technicien traite le problème.
-5. Une réponse est ajoutée dans GLPI.
-6. Le ticket est résolu.
-7. Le ticket est clôturé.
+1. Lire la demande et préciser le besoin ou les symptômes.
+2. Vérifier le type Incident/Demande, la catégorie, le demandeur, le lieu, l’urgence, l’impact et la priorité.
+3. Associer l’équipement concerné quand il existe dans le parc.
+4. Affecter le ticket au support compétent dans le bon périmètre.
+5. Consigner les vérifications et les actions effectivement réalisées. Distinguer les actions envisagées des résultats obtenus.
+6. Ajouter la solution et le résultat du test ; demander une confirmation utilisateur lorsqu’elle est possible.
+7. Passer en Résolu puis en Clos selon le circuit de validation retenu. Ces états sont distincts.
+8. Relier un article de base de connaissances s’il est pertinent et conserver l’historique.
 
-## Types de tickets
+## Preuves de traitement
 
-| Type | Exemple |
-|---|---|
-| Incident | Imprimante indisponible |
-| Demande | Accès à un dossier Google Drive |
-| Problème matériel | PC lent |
-| Problème réseau | Connexion Internet instable |
+Pour chaque ticket présenté, garder son identifiant, son état, les acteurs, la catégorie, le matériel associé, les suivis/tâches, la solution et les dates. Une ligne dans une liste est une preuve d’existence et de statut, pas un dossier de traitement complet.
 
-## Modèle simple de ticket
+La confirmation utilisateur explicite et le détail des historiques restent à conserver si l’on veut démontrer le circuit de validation. Le ticket 11 reste décrit comme Résolu ; le ticket 10 reste En cours.
 
-| Champ | Exemple |
-|---|---|
-| Titre | Imprimante indisponible |
-| Type | Incident |
-| Catégorie | Impression |
-| Priorité | Haute |
-| Demandeur | Employé administratif |
-| Description | L’imprimante ne répond plus depuis ce matin. |
-
-## Procédure de traitement
-
-1. Lire la demande.
-2. Vérifier la catégorie.
-3. Vérifier la priorité.
-4. Ajouter une réponse si une information manque.
-5. Traiter le problème.
-6. Ajouter la solution.
-7. Passer le ticket en résolu.
-
-## Exemple de réponse technicien
-
-Le problème a été vérifié.  
-L’imprimante a été redémarrée et le test d’impression fonctionne à nouveau.
-
-## Lien avec E5
-
-Cette organisation permet de montrer :
-
-- la gestion des incidents ;
-- le traitement des demandes ;
-- la mise à disposition d’un service informatique ;
-- la traçabilité des interventions.
+[Registre des tickets](gestion-des-tickets.md) — [Procédures en base de connaissances](preuves/base-connaissances/README.md).

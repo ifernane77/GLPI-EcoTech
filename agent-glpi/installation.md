@@ -1,5 +1,8 @@
 # Installation et configuration de GLPI Agent sur un poste client Debian
 
+> État documentaire au 24 octobre 2026 : procédure de laboratoire et captures historiques conservées. Le projet EcoTech est une simulation. Ces traces ne certifient ni la disponibilité actuelle du service, ni un déploiement en production. Les commandes décrivent le travail documenté ; elles ne constituent pas un script de réinstallation validé.
+> La remontée du client Debian est visible dans l’entité racine. Le rattachement de ce client à EcoTech et la continuité avec les neuf équipements simulés ne sont pas établis par les captures. L’adresse 192.168.1.34 est celle du laboratoire au moment des essais ; la vérifier avant réutilisation.
+
 ## 1. Présentation du projet
 
 Ce mini-projet consiste à inventorier automatiquement un poste client Debian dans un serveur GLPI à l’aide de **GLPI Agent**.
@@ -41,10 +44,10 @@ Ce mode permet à la VM d’être présente sur le même réseau que le PC hôte
 Preuve :
 
 ```text
-captures/01-reseau-vm-serveur-glpi.png
+../preuves/inventaire-agent/01-reseau-vm-serveur-glpi.png
 ```
 
-![Réseau VM serveur GLPI](captures/01-reseau-vm-serveur-glpi.png)
+![Réseau VM serveur GLPI](../preuves/inventaire-agent/01-reseau-vm-serveur-glpi.png)
 
 ---
 
@@ -68,10 +71,10 @@ Cette VM ne contient pas GLPI serveur. Elle sert uniquement de poste client avec
 Preuve :
 
 ```text
-captures/02-creation&reseau-vm-client.png
+../preuves/inventaire-agent/02-creation&reseau-vm-client.png
 ```
 
-![Création et réseau VM client](captures/02-creation\&reseau-vm-client.png)
+![Création et réseau VM client](../preuves/inventaire-agent/02-creation&reseau-vm-client.png)
 
 ---
 
@@ -96,10 +99,10 @@ Cette adresse est importante, car elle permet au poste client d’envoyer son in
 Preuve :
 
 ```text
-captures/03-ip-serveur-glpi.png
+../preuves/inventaire-agent/03-ip-serveur-glpi.png
 ```
 
-![IP serveur GLPI](captures/03-ip-serveur-glpi.png)
+![IP serveur GLPI](../preuves/inventaire-agent/03-ip-serveur-glpi.png)
 
 ---
 
@@ -122,10 +125,10 @@ Ce test permet de vérifier que les deux VM peuvent communiquer entre elles.
 Preuve :
 
 ```text
-captures/04-ping-client-vers-serveur.png
+../preuves/inventaire-agent/04-ping-client-vers-serveur.png
 ```
 
-![Ping client vers serveur](captures/04-ping-client-vers-serveur.png)
+![Ping client vers serveur](../preuves/inventaire-agent/04-ping-client-vers-serveur.png)
 
 ---
 
@@ -142,10 +145,10 @@ Cette étape permet au serveur GLPI d’accepter les inventaires envoyés par le
 Preuve :
 
 ```text
-captures/05-activation-inventaire-glpi.png
+../preuves/inventaire-agent/05-activation-inventaire-glpi.png
 ```
 
-![Activation inventaire GLPI](captures/05-activation-inventaire-glpi.png)
+![Activation inventaire GLPI](../preuves/inventaire-agent/05-activation-inventaire-glpi.png)
 
 ---
 
@@ -182,10 +185,10 @@ Cette URL correspond au point d’entrée utilisé par GLPI pour recevoir les in
 Preuve :
 
 ```text
-captures/06-installation-glpi-agent.png
+../preuves/inventaire-agent/06-installation-glpi-agent.png
 ```
 
-![Installation GLPI Agent](captures/06-installation-glpi-agent.png)
+![Installation GLPI Agent](../preuves/inventaire-agent/06-installation-glpi-agent.png)
 
 ---
 
@@ -204,10 +207,10 @@ Le statut affiché indique que GLPI Agent est en attente de la prochaine exécut
 Preuve :
 
 ```text
-captures/07-interface-locale-agent.png
+../preuves/inventaire-agent/07-interface-locale-agent.png
 ```
 
-![Interface locale GLPI Agent](captures/07-interface-locale-agent.png)
+![Interface locale GLPI Agent](../preuves/inventaire-agent/07-interface-locale-agent.png)
 
 ---
 
@@ -232,10 +235,10 @@ Cette étape permet de déclencher manuellement la remontée du poste client dan
 Preuve :
 
 ```text
-captures/08-force-inventory.png
+../preuves/inventaire-agent/08-force-inventory.png
 ```
 
-![Force inventory](captures/08-force-inventory.png)
+![Force inventory](../preuves/inventaire-agent/08-force-inventory.png)
 
 ---
 
@@ -254,10 +257,10 @@ Cette capture est une preuve essentielle du projet, car elle montre que l’inve
 Preuve :
 
 ```text
-captures/09-poste-detecte-dans-glpi.png
+../preuves/inventaire-agent/09-poste-detecte-dans-glpi.png
 ```
 
-![Poste détecté dans GLPI](captures/09-poste-detecte-dans-glpi.png)
+![Poste détecté dans GLPI](../preuves/inventaire-agent/09-poste-detecte-dans-glpi.png)
 
 ---
 
@@ -270,10 +273,10 @@ Cette étape montre que GLPI Agent ne remonte pas seulement le nom du poste, mai
 Preuve :
 
 ```text
-captures/10-logiciels-detectes.png
+../preuves/inventaire-agent/10-logiciels-detectes.png
 ```
 
-![Logiciels détectés](captures/10-logiciels-detectes.png)
+![Logiciels détectés](../preuves/inventaire-agent/10-logiciels-detectes.png)
 
 ---
 
@@ -292,10 +295,10 @@ Cette étape permet de vérifier la remontée d’informations matérielles tell
 Preuve :
 
 ```text
-captures/11-composants-detectes.png
+../preuves/inventaire-agent/11-composants-detectes.png
 ```
 
-![Composants détectés](captures/11-composants-detectes.png)
+![Composants détectés](../preuves/inventaire-agent/11-composants-detectes.png)
 
 ---
 

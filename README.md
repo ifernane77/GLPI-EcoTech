@@ -1,56 +1,30 @@
-# GLPI EcoTech
+# GLPI EcoTech — dossier de support informatique
 
-## Présentation du projet
+GLPI EcoTech est une simulation professionnelle de support informatique fondée sur le contexte d’une petite entreprise du BTP à Saint-Pierre, La Réunion. Ce dépôt conserve la documentation, les captures d’un environnement GLPI utilisé et les limites des preuves disponibles pour E5.
 
-GLPI EcoTech est une simulation professionnelle réalisée dans le cadre du BTS SIO.
+## Réalisations documentées
 
-L’objectif est de documenter la mise en place d’un environnement GLPI sur Debian 11 pour représenter le support informatique d’une petite entreprise, EcoTech.
+| Domaine | État étayé par les documents et captures |
+|---|---|
+| Serveur | GLPI accessible sur une VM Debian 11 ; installation Apache, PHP et MariaDB documentée |
+| Agent | Client Debian séparé, configuration réseau et remontée d’inventaire documentées |
+| Organisation | Entité EcoTech, cinq comptes EcoTech, quatre groupes ; habilitation Technician du support |
+| Patrimoine | Neuf fiches d’équipements simulés, dont une fiche administrative détaillée |
+| Support | Huit tickets visibles : six clos, un résolu, un en cours ; détails conservés pour trois incidents |
+| Connaissances | Procédure de déclaration lisible ; article Google Drive visible dans une liste |
 
-Ce projet est principalement lié à l’épreuve E5.
+Ces preuves décrivent des états historiques du laboratoire. Elles ne démontrent pas un service en production chez EcoTech, le traitement réel de tous les scénarios envisagés ou une disponibilité actuelle. Les équipements simulés et le client réellement inventorié par agent sont distingués.
 
-## Contexte
+## Parcours de lecture
 
-EcoTech est une petite entreprise de génie civil et de BTP située à Saint-Pierre, à La Réunion.
+1. [Présentation et périmètre](presentation-projet.md).
+2. [Installation serveur](serveur-glpi/installation.md) et [inventaire par agent](agent-glpi/installation.md).
+3. [Organisation](organisation-glpi.md), [utilisateurs et droits](utilisateurs-et-droits.md), [parc](inventaire-parc.md).
+4. [Registre des tickets](gestion-des-tickets.md) et [procédure de support](gestion-du-support.md).
+5. [Index des preuves par thème](preuves/README.md).
+6. [Présentation pour le portfolio](portfolio/presentation-portfolio-glpi.md).
+7. [Compte rendu et preuves à compléter](compte-rendu-coherence.md).
 
-L’entreprise dispose de quelques équipements informatiques : ordinateurs, téléphones professionnels, imprimante/scanner, accès Internet et messagerie professionnelle.
+## Traçabilité
 
-Le suivi du parc informatique et des incidents n’est pas formalisé. GLPI permettrait de centraliser le matériel, les demandes, les incidents et certaines procédures internes.
-
-## Objectifs du projet
-
-Le projet GLPI EcoTech doit permettre de :
-
-- simuler un environnement de support informatique ;
-- recenser le parc informatique ;
-- créer des utilisateurs ;
-- gérer des tickets d’incidents ;
-- gérer des demandes internes ;
-- créer une petite base de connaissances ;
-- documenter l’installation et les choix effectués.
-
-## Technologies prévues
-
-- Debian 11
-- GLPI
-- Serveur web
-- Base de données
-- Navigateur web
-- GitHub pour la documentation
-
-## Épreuve concernée
-
-Ce projet est principalement lié à l’épreuve E5 : support et mise à disposition de services informatiques.
-
-## Avancement
-
-| Semaine | Travail réalisé | Statut |
-|---|---|---|
-| Semaine 1 | Définition du périmètre, inventaire prévisionnel du parc et backlog initial | Terminé |
-| Semaine 2 | Cartographie du système d’information, inventaire du parc et règles de sécurisation de base | Terminé |
-| Semaine 3 | Préparation de 8 tickets GLPI réalistes et classification par type, priorité et compétence E5 | Terminé |
-| Semaine 4 | Préparation de l’environnement GLPI, VM Debian 11, prérequis et procédure d’accès | Terminé |
-| Semaine 5 | Préparation des catégories GLPI : matériel, impression, réseau, cloud/Google Drive, application EcoTech, documents, sauvegarde et accès utilisateur | Terminé |
-| Semaine 6 | Schéma simple du SI EcoTech : Livebox, postes, téléphones, imprimante, serveur GLPI de test, utilisateurs et flux de support | Terminé |
-| Semaine 7 | Préparation des entités, groupes, comptes utilisateurs et profils GLPI pour EcoTech | Terminé |
-| Semaine 8 | Préparation de la page portfolio GLPI EcoTech : contexte, objectif E5, preuves, captures clés et script oral | Terminé |
-| Semaine 9 | Préparation de la procédure support GLPI : déclaration, qualification, affectation, traitement, documentation et clôture d’un ticket | Terminé |
+La révision documentaire du 24 octobre 2026 s’appuie sur l’état `661422d` du 16 août 2026 et sur les captures déjà présentes. Elle ne correspond à aucune nouvelle intervention dans GLPI. Voir le [journal de traçabilité](journal-de-bord.md).

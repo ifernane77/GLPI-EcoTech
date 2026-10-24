@@ -1,38 +1,20 @@
-# Backlog — GLPI EcoTech
+# Compléments du dossier E5
 
-## Objectif du backlog
+Ce suivi porte sur les preuves disponibles, sans présumer du travail effectué en dehors du dépôt. « À conserver » signifie que la preuve manque ici, pas que l’action n’a jamais eu lieu.
 
-Ce backlog permet de suivre les étapes du projet GLPI EcoTech.
-
-## Tâches prioritaires
-
-| Priorité | Tâche | Description | Statut |
-|---|---|---|---|
-| Haute | Définir le périmètre | Expliquer le rôle de GLPI dans le contexte EcoTech | Terminé |
-| Haute | Préparer l’inventaire | Lister le matériel à intégrer dans GLPI | Terminé |
-| Haute | Préparer Debian 11 | Prévoir l’environnement d’installation | À faire |
-| Haute | Installer GLPI | Mettre en place GLPI sur Debian 11 | À faire |
-| Haute | Créer les utilisateurs | Ajouter les profils nécessaires | À faire |
-| Haute | Ajouter le parc | Créer les équipements dans GLPI | À faire |
-| Haute | Créer des tickets | Simuler incidents et demandes | À faire |
-| Moyenne | Base de connaissances | Rédiger des procédures simples | À faire |
-| Moyenne | Documentation | Documenter les étapes et captures | À faire |
-
-## Version minimale attendue
-
-La version minimale doit permettre de présenter :
-
-- un GLPI fonctionnel ;
-- quelques utilisateurs ;
-- un parc informatique simple ;
-- plusieurs tickets réalistes ;
-- une base de connaissances courte ;
-- des captures d’écran claires.
-
-## Suivi
-
-| Semaine | Travail prévu | Statut |
+| Priorité | Action | État documentaire |
 |---|---|---|
-| Semaine 1 | Périmètre, inventaire et backlog | Terminé |
-| Semaine 2 | Architecture SI et flux autour du support | À faire |
-| Semaine 3 | Préparation environnement virtualisé | À faire |
+| 1 | Harmoniser textes, noms, quantités, statuts et liens | Réalisé lors de la révision documentaire du 24 octobre 2026 |
+| 1 | Classer les captures par thème et supprimer les dossiers hebdomadaires vides | Réalisé lors de cette révision |
+| 1 | Conserver les détails des tickets 5, 6, 7, 9 et 11 | À conserver |
+| 1 | Conserver habilitations et tests demandeur/support | À conserver |
+| 1 | Vérifier les mots de passe par défaut et changer tout secret ancien réellement utilisé | À vérifier dans le laboratoire |
+| 2 | Conserver membres et portée des groupes | À conserver |
+| 2 | Conserver arborescence des catégories et types des demandes | À conserver |
+| 2 | Conserver export du parc, fiches imprimante/Livebox/téléphone, source du client agent | À conserver |
+| 2 | Relever versions exactes, accès actuel et dernier inventaire | À vérifier et conserver |
+| 2 | Conserver contenu Drive et visibilité des articles | À conserver |
+| 2 | Sauvegarder puis tester une restauration isolée | Non démontré |
+| Selon traitement | Ajouter solution du ticket 10 et clôture du 11 | Uniquement si effectuées |
+
+Le scénario n’exige pas de créer tous les anciens tickets prévisionnels. Les étapes pratiques sont dans le [compte rendu](compte-rendu-coherence.md).
