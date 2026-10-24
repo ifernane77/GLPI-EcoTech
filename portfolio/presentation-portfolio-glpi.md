@@ -28,3 +28,7 @@ Les neuf fiches EcoTech sont des données de simulation. Elles ne doivent pas ê
 Les détails de cinq tickets, les habilitations de tous les utilisateurs, la composition des groupes et une restauration testée restent à conserver. Je ne présente pas ces points comme validés.
 
 [Preuves sélectionnées](preuves-portfolio.md) — [préparation orale](script-oral-glpi.md) — [compléments à apporter](../compte-rendu-coherence.md).
+
+## Chronologie par rapport au stage
+
+Mon stage a commencé le **18 août 2026**. J’avais réalisé le travail GLPI présenté ici avant cette date, alors que je partageais déjà les bureaux de l’entreprise. Je le présente comme un travail antérieur au stage, contextualisé chez EcoTech. Les activités effectuées pendant le stage doivent être identifiées séparément et étayées par leurs propres preuves. Les dates des commits historiques sont conservées.
