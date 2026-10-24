@@ -21,3 +21,9 @@ Les dates des commits sont les dates d’enregistrement dans Git, pas une certif
 ## Portée de la révision du 24 octobre
 
 Aucune donnée GLPI, aucun ticket et aucun équipement n’ont été créés ou modifiés lors de cette révision. Les images originales sont conservées à l’identique et déplacées par thème. La documentation distingue les neuf équipements simulés du client Debian inventorié par agent. Les lacunes sont recensées dans le [compte rendu](compte-rendu-coherence.md).
+
+## Chronologie par rapport au stage
+
+Selon la précision apportée par l’auteur le 24 octobre 2026, le stage a commencé le **18 août 2026**. Le travail GLPI présenté dans ce dépôt a été réalisé **avant le stage**, alors que l’auteur partageait déjà les bureaux de l’entreprise. Les commits antérieurs au 18 août sont cohérents avec cette chronologie et leurs dates sont conservées.
+
+Ce travail antérieur est présenté comme tel. Il ne doit pas être comptabilisé comme une activité effectuée pendant le stage. Toute activité ultérieure réellement réalisée pendant le stage doit être décrite séparément avec ses dates et preuves ; aucune n’est déduite automatiquement des fichiers existants.
