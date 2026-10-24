@@ -1,39 +1,21 @@
-# Organisation GLPI — EcoTech
+# Organisation constatée dans GLPI
 
-## Objectif
+## Entités
 
-Ce document présente l’organisation prévue dans GLPI pour EcoTech.
+L’entité `EcoTech` est créée sous l’entité racine. Son commentaire décrit une simulation de gestion du parc et du support interne. Les fiches du parc et les tickets EcoTech sont visibles dans ce périmètre.
 
-## Entité principale
+## Groupes et utilisateurs
 
-| Entité | Rôle |
-|---|---|
-| EcoTech | Gestion du parc, des utilisateurs et des tickets |
+Quatre groupes figurent dans la capture de liste : `EcoTech - Employés`, `EcoTech - Gérants`, `EcoTech - Prestataires`, `EcoTech - Support informatique`. Leur entité affichée est **Entité racine**. Leur présence ne prouve pas leur portée récursive ni la composition de chacun.
 
-## Organisation prévue
+Cinq comptes EcoTech sont visibles, en plus du compte `glpi`. Voir [utilisateurs et droits](utilisateurs-et-droits.md).
 
-- Gérants
-- Employés
-- Prestataires
-- Support informatique
+## Équipements et services
 
-## Équipements à référencer
+Le [registre du parc](inventaire-parc.md) décrit neuf fiches simulées. L’[inventaire par agent](agent-glpi/installation.md) concerne séparément le client `Debian-Client-GLPI-Agent` dans l’entité racine. Ne pas présenter les neuf fiches comme issues de cet agent.
 
-| Nom | Type | Usage |
-|---|---|---|
-| PC-ADM-01 | PC fixe | Administratif |
-| PC-GER-01 | PC portable | Gérant |
-| TEL-PRO-01 | Téléphone | Terrain |
-| IMP-SCAN-01 | Imprimante / scanner | Documents |
-| BOX-01 | Livebox | Internet |
-| SRV-GLPI-TEST | Serveur test | GLPI Debian 11 |
+GLPI centralise des fiches d’équipements, des tickets et des procédures. Google Drive est un service évoqué par un ticket et un article ; aucune intégration automatique avec Google Drive n’est démontrée.
 
-## Rôle de GLPI
+## Preuves
 
-GLPI permet de centraliser :
-
-- le parc informatique ;
-- les utilisateurs ;
-- les incidents ;
-- les demandes ;
-- les procédures simples.
+[Entités, comptes, groupes et habilitation](preuves/utilisateurs-profils/README.md), [parc](preuves/parc/README.md), [tickets](preuves/tickets/README.md).

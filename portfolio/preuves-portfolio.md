@@ -1,119 +1,14 @@
-# Preuves portfolio — GLPI EcoTech
+# Sélection des preuves pour le portfolio
 
-## Objectif
+| Élément à présenter | Preuve principale | Limite à connaître |
+|---|---|---|
+| Installation du service | [Procédure serveur](../serveur-glpi/installation.md) et [captures](../preuves/installation-serveur/README.md) | État historique de laboratoire ; versions et disponibilité actuelle à relever |
+| Inventaire automatique | [Procédure agent](../agent-glpi/installation.md) et [captures](../preuves/inventaire-agent/README.md) | Client racine distinct des neuf fiches EcoTech |
+| Organisation et habilitation | [Entité, comptes, groupes et Technician](../preuves/utilisateurs-profils/README.md) | Autres habilitations et appartenances à conserver |
+| Gestion du patrimoine | [Parc et fiche administrative](../preuves/parc/README.md) | Données de simulation |
+| Traitement d’incidents | [Tickets 4 et 8](../preuves/tickets/README.md) | Solutions enregistrées dans la simulation |
+| Suivi en cours | [Ticket 10](../preuves/tickets/11-ticket-wifi-smartphone-en-cours.png) | Aucune résolution revendiquée |
+| Assistance aux utilisateurs | [Procédure de déclaration](../preuves/base-connaissances/13-base-connaissances-procedure.png) | Visibilité en compte demandeur à vérifier |
+| Documentation et versionnement | [Historique documentaire](../journal-de-bord.md) et [captures historiques](../preuves/documentation/README.md) | Le commit prouve l’enregistrement, pas l’exécution d’une intervention |
 
-Ce document liste les preuves déjà produites pour le projet GLPI EcoTech.
-
-Ces preuves pourront être utilisées plus tard dans mon portfolio BTS.
-
----
-
-## Preuves semaine 1
-
-| Preuve | Description |
-|---|---|
-| Périmètre du projet | Présentation de GLPI EcoTech |
-| Inventaire prévisionnel | Premiers équipements à gérer |
-| Objectifs projet | Objectifs E5 du projet |
-| Backlog | Premières tâches prévues |
-
----
-
-## Preuves semaine 2
-
-| Preuve | Description |
-|---|---|
-| Cartographie SI | Vue simple du système informatique |
-| Inventaire du parc | Liste des équipements EcoTech |
-| Règles de sécurisation | Premières règles simples |
-
----
-
-## Preuves semaine 3
-
-| Preuve | Description |
-|---|---|
-| Tickets prévisionnels | Préparation de 8 tickets réalistes |
-| Classification tickets | Type, priorité et compétence E5 |
-| Documentation GitHub | Projet organisé dans le dépôt |
-
----
-
-## Preuves semaine 4
-
-| Preuve | Description |
-|---|---|
-| Installation GLPI | Préparation de l’installation |
-| Environnement Debian | Préparation de la VM Debian 11 |
-| Prérequis GLPI | Liste des prérequis |
-| Procédure d’accès VM | Accès prévu à la machine Debian |
-
----
-
-## Preuves semaine 5
-
-| Preuve | Description |
-|---|---|
-| Catégories GLPI | Matériel, impression, réseau, documents, sauvegarde |
-| Correspondance tickets / catégories | Classement des tickets prévus |
-| Plan de paramétrage | Étapes prévues dans GLPI |
-
----
-
-## Preuves semaine 6
-
-| Preuve | Description |
-|---|---|
-| Schéma SI EcoTech | Représentation du SI |
-| Flux de support | Parcours d’un ticket |
-| Justification du schéma | Explication des choix |
-
----
-
-## Preuves semaine 7
-
-| Preuve | Description |
-|---|---|
-| Entités prévues | Organisation EcoTech dans GLPI |
-| Groupes utilisateurs | Gérants, employés, support |
-| Comptes utilisateurs prévus | Comptes fictifs à créer plus tard |
-| Profils et droits | Demandeur, technicien, administrateur |
-| Préparation paramétrage | Étapes avant création réelle dans GLPI |
-
----
-
-## Captures importantes à garder
-
-Les captures les plus utiles seront :
-
-- capture du dépôt GitHub ;
-- capture de l’inventaire prévisionnel ;
-- capture des tickets prévisionnels ;
-- capture des catégories GLPI ;
-- capture du schéma SI ;
-- capture des profils et droits ;
-- capture des commits Git ;
-- plus tard : captures de GLPI installé et utilisé.
-
----
-
-## Preuves futures à produire dans GLPI
-
-Quand GLPI sera installé, je devrai garder :
-
-- capture de la page d’accueil GLPI ;
-- capture des utilisateurs créés ;
-- capture des équipements ajoutés ;
-- capture des catégories ;
-- capture d’un ticket incident ;
-- capture d’un ticket demande ;
-- capture d’un ticket traité ;
-- capture d’un article de base de connaissances.
-
----
-
-## Remarque personnelle
-
-Je garde ces preuves progressivement pour éviter de devoir tout refaire à la fin.
-
-Chaque preuve doit être compréhensible et facile à expliquer à l’oral.
+Le projet illustre plusieurs activités utiles à E5. Cette sélection ne vaut pas validation de l’ensemble des compétences de l’épreuve. Les compléments sont listés dans le [compte rendu](../compte-rendu-coherence.md).

@@ -1,67 +1,17 @@
-# Installation GLPI — GLPI EcoTech
+# Installation GLPI — point d’entrée
 
-## Objectif
+GLPI a été installé et son interface est visible dans les captures conservées. L’ancienne préparation à l’installation est remplacée par les traces techniques disponibles.
 
-Ce document prépare l’installation de GLPI dans le cadre du projet GLPI EcoTech.
+- [Installation du serveur Debian / Apache / PHP / MariaDB / GLPI](serveur-glpi/installation.md).
+- [Installation et configuration du client GLPI Agent](agent-glpi/installation.md).
+- [Environnement et vérifications avant démonstration](environnement-debian.md).
+- [Captures serveur](preuves/installation-serveur/README.md).
+- [Captures agent](preuves/inventaire-agent/README.md).
 
-À cette étape, l’objectif n’est pas encore de finaliser toute l’installation, mais de préparer l’environnement, les prérequis et la procédure à suivre.
+## Limites de reproductibilité
 
-## Contexte
+La commande d’ajout du dépôt PHP 8.1 n’est pas documentée. La capture de l’assistant d’installation navigateur n’est pas conservée. Les versions réellement installées doivent être relevées dans le laboratoire. Les procédures décrivent un travail historique ; aucune nouvelle réinstallation n’a été testée lors de la révision documentaire.
 
-GLPI EcoTech est une simulation professionnelle réalisée pour le BTS SIO.
+## Accès et secrets
 
-Le projet a pour objectif de représenter la gestion du support informatique d’une petite entreprise : EcoTech.
-
-GLPI permettra plus tard de gérer :
-
-- le parc informatique ;
-- les utilisateurs ;
-- les tickets d’incidents ;
-- les demandes internes ;
-- une base de connaissances.
-
-## Environnement prévu
-
-L’installation de GLPI sera réalisée sur une machine virtuelle Debian 11.
-
-L’environnement prévu est le suivant :
-
-| Élément | Choix prévu |
-|---|---|
-| Système | Debian 11 |
-| Application | GLPI |
-| Serveur web | Apache |
-| Base de données | MariaDB ou MySQL |
-| Langage | PHP |
-| Accès | Navigateur web |
-| Documentation | Markdown + captures d’écran |
-
-## Étapes prévues
-
-Les étapes prévues pour l’installation sont :
-
-1. vérifier que la VM Debian 11 fonctionne ;
-2. vérifier l’accès à Internet ;
-3. mettre à jour le système ;
-4. installer les prérequis nécessaires ;
-5. installer Apache ;
-6. installer PHP ;
-7. installer MariaDB ou MySQL ;
-8. télécharger GLPI ;
-9. configurer la base de données ;
-10. lancer l’assistant d’installation GLPI ;
-11. faire les captures d’écran ;
-12. documenter les problèmes rencontrés.
-
-## Commandes prévues plus tard
-
-Les commandes exactes seront testées et documentées lors de l’installation réelle.
-
-Exemples de commandes qui pourront être utilisées :
-
-```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install apache2
-sudo apt install mariadb-server
-sudo apt install php
+La procédure SQL utilise désormais un emplacement fictif pour le mot de passe. Un ancien mot de passe reste présent dans l’historique Git : le changer s’il a été utilisé. Le changement des comptes GLPI par défaut n’est pas démontré par les preuves présentes.

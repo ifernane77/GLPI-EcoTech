@@ -1,5 +1,7 @@
 # Projet GLPI Agent — BTS SIO SLAM
 
+> État documentaire au 24 octobre 2026 : procédure de laboratoire et captures historiques conservées. Le projet EcoTech est une simulation. Ces traces ne certifient ni la disponibilité actuelle du service, ni un déploiement en production. Les commandes décrivent le travail documenté ; elles ne constituent pas un script de réinstallation validé.
+
 ## Présentation
 
 Ce projet consiste à mettre en place un inventaire automatique entre un poste client Debian et un serveur GLPI à l’aide de **GLPI Agent**.
@@ -63,7 +65,7 @@ Ce projet m’a permis de travailler plusieurs compétences utiles en BTS SIO :
 Les preuves du projet sont disponibles dans le dossier :
 
 ```text
-captures/
+../preuves/inventaire-agent/
 ```
 
 Liste des captures :

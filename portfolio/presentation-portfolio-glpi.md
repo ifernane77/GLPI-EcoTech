@@ -1,112 +1,30 @@
-# Portfolio — GLPI EcoTech
+# GLPI EcoTech — présentation pour le portfolio
 
-## Présentation du projet
+## Contexte
 
-GLPI EcoTech est un projet de simulation professionnelle réalisé dans le cadre du BTS SIO.
+J’ai réalisé une simulation de support informatique adaptée au contexte d’EcoTech, petite entreprise du BTP à Saint-Pierre, La Réunion. L’objectif est de centraliser un parc, des utilisateurs, des tickets et des procédures dans GLPI.
 
-L’objectif est de préparer un environnement GLPI pour gérer le support informatique d’une petite entreprise.
+## Réalisation
 
-Le projet est basé sur le contexte de l’entreprise EcoTech, située à Saint-Pierre, à La Réunion.
+J’ai documenté l’installation de GLPI sur une VM Debian 11 avec Apache, PHP et MariaDB. J’ai également documenté un client Debian équipé de GLPI Agent et conservé une capture de sa remontée d’inventaire, ainsi que des captures de ses logiciels et composants.
 
----
+Dans le scénario EcoTech, les preuves montrent une entité, cinq comptes EcoTech, quatre groupes et neuf fiches d’équipements simulés. Le compte support dispose du profil Technician dans EcoTech.
 
-## Contexte EcoTech
+La liste de support comporte huit tickets : six clos, un résolu et un en cours. Les captures détaillées des incidents imprimante et Internet montrent les actions et solutions saisies jusqu’à la clôture. Le problème Wi-Fi du téléphone terrain reste en cours dans la preuve disponible.
 
-EcoTech est une petite entreprise du BTP et du génie civil.
+Une procédure explique comment déclarer un ticket. Un article d’accès Google Drive apparaît aussi dans la base de connaissances.
 
-L’entreprise utilise plusieurs équipements et outils numériques :
+## Ce que je peux démontrer
 
-- 2 PC fixes ;
-- 2 PC portables ;
-- 3 téléphones professionnels ;
-- 1 imprimante / scanner ;
-- 1 Livebox ;
-- Google Drive ;
-- mails professionnels ;
-- WhatsApp.
+- Recenser et organiser des ressources informatiques dans GLPI.
+- Tracer la prise en charge et la résolution d’incidents dans une simulation.
+- Documenter la mise à disposition d’un service et l’inventaire par agent.
+- Produire une procédure pour les utilisateurs et versionner la documentation avec Git.
 
----
+## Limites connues
 
-## Problème identifié
+Les neuf fiches EcoTech sont des données de simulation. Elles ne doivent pas être confondues avec le client Debian inventorié automatiquement, visible séparément dans l’entité racine. Les captures ne certifient pas un déploiement en production dans l’entreprise.
 
-EcoTech n’a pas encore de vrai outil centralisé pour suivre :
+Les détails de cinq tickets, les habilitations de tous les utilisateurs, la composition des groupes et une restauration testée restent à conserver. Je ne présente pas ces points comme validés.
 
-- les équipements ;
-- les incidents ;
-- les demandes internes ;
-- les problèmes d’accès ;
-- les documents liés au support ;
-- les procédures simples.
-
-Les informations peuvent être dispersées entre les échanges oraux, les mails, WhatsApp ou les fichiers partagés.
-
----
-
-## Objectif du projet GLPI
-
-L’objectif du projet GLPI EcoTech est de préparer une solution de support informatique simple.
-
-GLPI pourra permettre de gérer :
-
-- le parc informatique ;
-- les utilisateurs ;
-- les groupes ;
-- les profils ;
-- les tickets ;
-- les incidents ;
-- les demandes ;
-- une base de connaissances.
-
----
-
-## Lien avec l’épreuve E5
-
-Ce projet sert principalement à préparer l’épreuve E5.
-
-Il permet de montrer une démarche autour :
-
-- de la gestion du patrimoine informatique ;
-- du traitement des incidents ;
-- du traitement des demandes ;
-- de la mise à disposition d’un service informatique ;
-- de la documentation des procédures.
-
----
-
-## Travail déjà réalisé
-
-À ce stade, j’ai préparé :
-
-- le périmètre du projet GLPI ;
-- l’inventaire prévisionnel du parc ;
-- les tickets prévisionnels ;
-- les catégories GLPI ;
-- le schéma simple du SI EcoTech ;
-- les flux de support ;
-- les groupes utilisateurs ;
-- les profils et droits prévus.
-
----
-
-## Ce qui sera fait plus tard
-
-Quand GLPI sera installé et accessible, je pourrai :
-
-- créer les entités ;
-- créer les groupes ;
-- créer les utilisateurs ;
-- ajouter les équipements ;
-- créer les tickets ;
-- traiter les incidents ;
-- créer des articles de base de connaissances ;
-- garder des captures de l’interface GLPI.
-
----
-
-## Remarque personnelle
-
-Pour l’instant, je prépare surtout l’organisation du projet.
-
-Je ne veux pas dire que GLPI est déjà complètement en service si je n’ai pas encore créé les éléments dans l’outil.
-
-Cette page portfolio me sert à expliquer le projet simplement et à garder une trace de mon avancement.
+[Preuves sélectionnées](preuves-portfolio.md) — [préparation orale](script-oral-glpi.md) — [compléments à apporter](../compte-rendu-coherence.md).

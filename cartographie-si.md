@@ -1,45 +1,23 @@
-# Cartographie du système d’information — GLPI EcoTech
+# Cartographie du laboratoire et du scénario EcoTech
 
-## Objectif
-
-Ce document présente une cartographie simple du système d’information cible d’EcoTech dans le cadre du projet GLPI EcoTech.
-
-L’objectif est de préparer l’intégration future des équipements dans GLPI et de produire une preuve exploitable pour l’épreuve E5.
-
-## Équipements identifiés
-
-Le parc informatique cible est composé de :
-
-- 2 PC fixes ;
-- 2 PC portables ;
-- 2 machines Windows ;
-- 2 machines Mac ;
-- 3 téléphones professionnels ;
-- 1 imprimante / scanner ;
-- 1 Livebox ;
-- des emails professionnels ;
-- un stockage actuel réparti entre Google Drive, PC personnels, mails et WhatsApp.
-
-## Schéma simplifié du système d’information
+## Architecture technique documentée
 
 ```mermaid
 flowchart TD
-    Internet[Internet] --> Livebox[Livebox]
-    Livebox --> PCFixe1[PC fixe administratif 1]
-    Livebox --> PCFixe2[PC fixe administratif 2]
-    Livebox --> Portable1[PC portable gérant 1]
-    Livebox --> Portable2[PC portable gérant 2]
-    Livebox --> Imprimante[Imprimante / Scanner]
-    Tel1[Téléphone pro 1] --> Internet
-    Tel2[Téléphone pro 2] --> Internet
-    Tel3[Téléphone pro 3] --> Internet
-    PCFixe1 --> Drive[Google Drive]
-    PCFixe2 --> Drive
-    Portable1 --> Drive
-    Portable2 --> Drive
-    Tel1 --> WhatsApp[WhatsApp]
-    Tel2 --> WhatsApp
-    Tel3 --> WhatsApp
-    GLPI[GLPI EcoTech] --> Parc[(Inventaire du parc)]
-    GLPI --> Tickets[(Tickets incidents / demandes)]
-    GLPI --> BaseCo[(Base de connaissances)]
+    H["VirtualBox / poste hôte"] --> S["VM serveur Debian 11"]
+    H --> C["VM cliente Debian 11"]
+    C --> A["GLPI Agent"]
+    A -->|"Inventaire par HTTP"| G["GLPI / Apache / PHP"]
+    S --> G
+    G --> M["MariaDB"]
+```
+
+La procédure agent décrit deux interfaces en accès par pont et l’adresse historique du serveur `192.168.1.34`. Le client est visible dans l’entité racine. Le rattachement à EcoTech et la continuité entre les différentes séries de captures ne sont pas démontrés.
+
+## Organisation représentée dans GLPI
+
+L’entité EcoTech regroupe les neuf fiches du [parc simulé](inventaire-parc.md) et les [tickets](gestion-des-tickets.md). Le scénario comprend quatre ordinateurs, trois téléphones, une imprimante et une Livebox.
+
+Google Drive et les documents de chantier apparaissent dans les demandes de support. Le dépôt ne démontre pas une intégration automatique à ces services ni une topologie physique vérifiée dans l’entreprise.
+
+Les anciens schémas de cadrage restent disponibles comme [preuves documentaires historiques](preuves/documentation/README.md). En cas de différence de quantités ou de noms, les listes capturées dans GLPI et les registres actuels du dépôt constituent la référence du scénario réalisé.

@@ -1,68 +1,31 @@
-## Fichier `inventaire-parc.md`
+# Parc informatique enregistré — EcoTech
 
-# Inventaire prévisionnel du parc informatique — EcoTech
+## Neuf fiches de simulation visibles
 
-## Objectif
+| Nom dans GLPI | Type visible | Précision |
+|---|---|---|
+| ECO-PC-ADM-01 | PC fixe | Dell OptiPlex, bureau administratif |
+| ECO-PC-GER-01 | PC portable | HP ProBook, bureau des gérants |
+| ECO-MAC-GER-02 | PC portable | Apple MacBook Air, bureau des gérants |
+| ECO-PC-SUP-01 | PC portable | Lenovo ThinkPad, bureau support |
+| ECO-IMP-ADM-01 | Imprimante | Associée au ticket 4 |
+| ECO-NET-LIVEBOX-01 | Matériel réseau | Associé au ticket 8 |
+| ECO-TEL-GER-01 | Téléphone | Fiche visible dans la liste globale |
+| ECO-TEL-GER-02 | Téléphone | Fiche visible dans la liste globale |
+| ECO-TEL-TER-01 | Téléphone | Associé au ticket 10 |
 
-Ce document prépare l’inventaire du parc informatique qui sera ensuite intégré dans GLPI.
+Les neuf fiches sont affichées « En service » dans EcoTech. Les ordinateurs portent des numéros de série préfixés `SIM-` : ces données représentent le scénario, pas un recensement certifié du matériel physique de l’entreprise.
 
-Il sert à identifier les équipements, leurs usages et les informations importantes à conserver.
+## Fiche détaillée conservée
 
-## Matériel recensé
+`ECO-PC-ADM-01` : utilisateur Administratif EcoTech, groupe Employés, responsable technique Support EcoTech, groupe technique Support informatique, numéro d’inventaire `INV-ECO-PC-ADM-01`, localisation bureau administratif et un ticket associé. Le système d’exploitation des quatre postes n’est pas renseigné dans la capture de liste ; ne pas annoncer une répartition Windows/macOS non vérifiée.
 
-| Type de matériel | Quantité | Utilisation prévue | Intégration GLPI |
-|---|---:|---|---|
-| PC fixes | 2 | Gestion administrative et documents | Oui |
-| PC portables | 2 | Utilisation par les gérants ou employés | Oui |
-| Machines Windows | 2 | Postes utilisateurs | Oui |
-| Machines Mac | 2 | Postes utilisateurs | Oui |
-| Téléphones professionnels | 3 | Appels, photos de chantier, échanges terrain | Oui |
-| Imprimante / scanner | 1 | Impression et numérisation de documents | Oui |
-| Livebox | 1 | Accès Internet de l’entreprise | Oui |
-| Emails professionnels | Non précisé | Communication professionnelle | À documenter |
-| Google Drive | Non précisé | Stockage de documents | À documenter |
+## Client Debian inventorié automatiquement
 
-## Informations à renseigner plus tard dans GLPI
+`Debian-Client-GLPI-Agent` apparaît comme machine VirtualBox sous Debian GNU/Linux 11 dans une capture distincte, avec processeur et identifiant remontés. Les captures suivantes montrent les logiciels et composants. Ce client est visible dans l’entité racine ; son rattachement aux fiches EcoTech n’est pas démontré. Il n’est pas compté parmi les neuf fiches simulées.
 
-Pour chaque équipement, il faudra idéalement renseigner :
+## Compléments utiles
 
-- nom de l’équipement ;
-- type ;
-- utilisateur principal ;
-- système d’exploitation ;
-- état ;
-- date d’ajout ;
-- localisation ;
-- remarques ;
-- incidents associés.
+Conserver un export du parc et les fiches imprimante, Livebox et téléphone terrain avec leurs relations aux tickets. Conserver la source et la date du dernier inventaire du client Debian. Le serveur est documenté comme VM d’hébergement ; aucune fiche `SRV-GLPI-TEST` n’est démontrée dans le parc EcoTech.
 
-## Exemple de nommage des équipements
-
-| Équipement | Nom possible dans GLPI |
-|---|---|
-| PC fixe administratif 1 | PC-ADM-01 |
-| PC fixe administratif 2 | PC-ADM-02 |
-| PC portable gérant 1 | PC-GER-01 |
-| PC portable gérant 2 | PC-GER-02 |
-| Téléphone professionnel 1 | TEL-PRO-01 |
-| Téléphone professionnel 2 | TEL-PRO-02 |
-| Téléphone professionnel 3 | TEL-PRO-03 |
-| Imprimante / scanner | IMP-SCAN-01 |
-| Livebox | BOX-01 |
-
-## Problèmes identifiés
-
-Les problèmes possibles sont :
-
-- absence d’inventaire centralisé ;
-- absence de suivi clair des incidents ;
-- antivirus inconnu ;
-- absence de politique de sauvegarde formalisée ;
-- utilisation de plusieurs supports de stockage ;
-- documentation technique limitée.
-
-## Lien avec GLPI
-
-GLPI permettra de créer une base centralisée du parc informatique et de relier les équipements à des tickets d’incidents ou de demandes.
-
-Cette étape prépare la compétence E5 liée à la gestion du patrimoine informatique.
+[Preuves parc](preuves/parc/README.md) et [preuves agent](preuves/inventaire-agent/README.md).
